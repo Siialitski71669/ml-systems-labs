@@ -1,41 +1,45 @@
-﻿# Lab 3 — Neural Network Comparison
+﻿# Lab 3 — Architectures and Their Costs
 
-## Goal
-The goal was to compare three models on the Fashion-MNIST dataset: MLP, CNN, and Attention.
+## 1. Goal
 
-## Setup
-- Dataset: Fashion-MNIST
-- Training: 5 epochs
-- Optimizer: Adam
-- Learning rate: 0.001
-- Device: CPU
+Compare MLP, CNN, and attention-based neural network architectures on Fashion-MNIST, considering classification accuracy, trainable parameters, computational cost, and inference latency.
 
-## Results
+## 2. Method
 
-| Model | Parameters | Test Accuracy |
+- Dataset: Fashion-MNIST.
+- Models: MLP, CNN, and Transformer-based attention model.
+- Optimizer: Adam.
+- Learning rate: 0.001.
+- Training duration in the existing experiment: 5 epochs.
+- Device: CPU.
+- The existing measurements are retained as historical experiment results. They must be regenerated with the updated profiling script before being treated as fully reproducible benchmark results.
+
+## 3. Results
+
+Existing experiment results:
+
+| Model | Trainable parameters | Test accuracy |
 |---|---:|---:|
 | MLP | 235,146 | 87.14% |
 | CNN | 20,490 | 90.05% |
 | Attention | 70,794 | 84.01% |
 
-## Computational Cost
+## 4. Computational Cost
 
-| Model | MACs | Approx. FLOPs |
+| Model | MACs | Approximate FLOPs |
 |---|---:|---:|
 | MLP | 234,752 | 469,504 |
 | CNN | 1,031,744 | 2,063,488 |
 | Attention | 591,488 | 1,182,976 |
 
-## Inference Latency
+FLOPs are approximate. Attention implementations may contain operations that are not fully captured by simple MAC-counting tools.
 
-| Model | Batch 1 | Batch 128 |
-|---|---:|---:|
-| MLP | 0.088 ms | 1.080 ms |
-| CNN | 0.382 ms | 96.250 ms |
-| Attention | 7.374 ms | 27.366 ms |
+## 5. Inference Latency
 
-## Conclusion
+The CSV and plot in `results/` contain measurements from the earlier experiment. Latency should be remeasured after warming up each model, repeating measurements at least five times, and reporting the median. Single-image inference should be repeated 100 times and reported separately.
 
-CNN achieved the highest test accuracy (90.05%) and had the fewest parameters. MLP was the fastest for the measured CPU batches. Attention achieved the lowest accuracy (84.01%) and had higher latency for a single image.
+## 6. Conclusions
 
-The results show that accuracy, model size, and inference speed should all be considered when choosing a model.
+1. In the existing experiment, CNN achieved the highest test accuracy at 90.05%.
+2. CNN had the fewest trainable parameters, showing that a smaller model can outperform a larger one on this dataset.
+3. Model selection should consider accuracy, parameter count, computational cost, and measured latency together. Benchmark comparisons should use the same hardware and measurement procedure.
