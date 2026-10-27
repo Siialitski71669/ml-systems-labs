@@ -1,4 +1,4 @@
-model,parameters,test_accuracy_percent,test_inference_seconds
-MLP,235146,87.14,2.773
-CNN,20490,90.05,5.241
-Attention,70794,84.01,2.662
+model,parameters,test_accuracy_percent
+MLP,235146,87.03
+CNN,20490,87.74
+Attention,70794,84.04

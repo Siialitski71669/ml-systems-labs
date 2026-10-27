@@ -1,7 +1,7 @@
-model,batch_size,median_latency_ms
-MLP,1,0.088
-MLP,128,1.08
-CNN,1,0.382
-CNN,128,96.25
-Attention,1,7.374
-Attention,128,27.366
+model,batch_size,median_latency_ms,repeats
+MLP,1,0.2442,100
+MLP,128,0.7366,5
+CNN,1,0.6036,100
+CNN,128,12.0378,5
+Attention,1,1.6352,100
+Attention,128,7.6804,5
