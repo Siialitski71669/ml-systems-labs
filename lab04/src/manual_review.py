@@ -39,7 +39,7 @@ report = [
     "Findings:"
 ]
 
-report += issues if issues else ["No violations found in the checked rules."]
+report += issues if issues else ["No issues found."]
 report += [
     "",
     "Review scope: numeric ranges, integer fields and target labels.",
@@ -51,3 +51,4 @@ report += [
 )
 
 print("\n".join(report))
+

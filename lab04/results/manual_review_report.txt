@@ -3,7 +3,7 @@ Rows inspected: 50
 Rule violations found: 0
 
 Findings:
-No violations found in the checked rules.
+No issues found.
 
 Review scope: numeric ranges, integer fields and target labels.
 This automated check does not establish that every demographic or employment category is semantically correct.
