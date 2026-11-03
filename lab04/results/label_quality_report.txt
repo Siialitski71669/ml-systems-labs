@@ -1,0 +1,6 @@
+LABEL QUALITY AUDIT
+Random sample size: 50
+Duplicate feature groups with conflicting labels: 5
+
+The 50 sampled rows were saved for manual inspection.
+Review them against the UCI Adult data dictionary.

@@ -1,0 +1,46 @@
+ADULT DATA VALIDATION REPORT
+Rows: 48842
+Columns: 15
+
+MISSING VALUES
+age: 0
+workclass: 2799
+fnlwgt: 0
+education: 0
+education-num: 0
+marital-status: 0
+occupation: 2809
+relationship: 0
+race: 0
+sex: 0
+capital-gain: 0
+capital-loss: 0
+hours-per-week: 0
+native-country: 857
+income: 0
+
+RANGE VIOLATIONS
+age: 0 values outside 17-90
+hours-per-week: 0 values outside 1-99
+capital-gain: 0 values outside 0-99999
+capital-loss: 0 values outside 0-4356
+
+SCHEMA CHECK
+age: numeric conversion failures = 0
+workclass: categorical column present
+fnlwgt: numeric conversion failures = 0
+education: categorical column present
+education-num: numeric conversion failures = 0
+marital-status: categorical column present
+occupation: categorical column present
+relationship: categorical column present
+race: categorical column present
+sex: categorical column present
+capital-gain: numeric conversion failures = 0
+capital-loss: numeric conversion failures = 0
+hours-per-week: numeric conversion failures = 0
+native-country: categorical column present
+income: categorical column present
+
+DUPLICATES
+Exact duplicate rows: 52

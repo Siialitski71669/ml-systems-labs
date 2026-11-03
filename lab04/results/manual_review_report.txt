@@ -1,0 +1,9 @@
+MANUAL LABEL SAMPLE QUALITY REVIEW
+Rows inspected: 50
+Rule violations found: 0
+
+Findings:
+No violations found in the checked rules.
+
+Review scope: numeric ranges, integer fields and target labels.
+This automated check does not establish that every demographic or employment category is semantically correct.

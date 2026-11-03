@@ -1,0 +1,17 @@
+﻿random_state: 42
+test_size: 0.30
+dataset: UCI Adult
+dataset_version: 2
+target: income
+positive_class: ">50K"
+negative_class: "<=50K"
+numeric_imputation: median
+categorical_imputation: most_frequent
+outlier_lower_percentile: 1
+outlier_upper_percentile: 99
+duplicate_removal: training_only
+feature_engineering:
+  - capital_net
+  - hours_per_age
+model: LogisticRegression
+max_iter: 2000
