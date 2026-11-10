@@ -1,0 +1,26 @@
+﻿Lab 05 — Experimental Results
+
+Gradient verification:
+- Custom vs PyTorch maximum difference: 0.0
+- Custom vs numerical maximum difference: 0.000000020559
+
+Neural network training:
+- Dataset: make_moons
+- Samples: 120
+- Architecture: 2 -> 8 -> 1
+- Epochs: 20
+- Custom accuracy: 87.5%
+- PyTorch accuracy: 87.5%
+- Custom median time: 1.2791 s
+- PyTorch median time: 1.7619 s
+
+Eager vs traced:
+- Eager: 0.0786 ms
+- Traced: 0.0527 ms
+- Eager / traced: 1.49x
+- Maximum output difference: 0.0
+
+Tensor layout:
+- Contiguous: 0.2646 ms
+- Non-contiguous: 0.2434 ms
+- Non-contiguous / contiguous: 0.92x
