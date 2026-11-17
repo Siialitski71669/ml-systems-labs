@@ -1,0 +1,51 @@
+﻿experiment:
+  name: "Lab06-CNN-Training-Pipeline"
+  tracking_uri: "sqlite:///mlflow.db"
+
+reproducibility:
+  seed: 42
+  deterministic: true
+
+dataset:
+  name: "FashionMNIST"
+  train_size: 55000
+  validation_size: 5000
+  data_dir: "../data"
+
+model:
+  name: "CNN"
+  input_channels: 1
+  num_classes: 10
+
+training:
+  epochs: 5
+  batch_size: 64
+  num_workers: 0
+  learning_rate: 0.001
+  optimizer: "Adam"
+  momentum: 0.9
+  scheduler: "none"
+  weight_decay: 0.0
+  gradient_accumulation_steps: 4
+
+checkpoint:
+  directory: "checkpoints"
+  filename: "cnn_resume_test.pth"
+  save_every_epoch: true
+  resume: true
+
+profiling:
+  enabled: false
+  wait: 0
+  warmup: 0
+  active: 1
+  output_file: "results/profile_trace.json"
+
+logging:
+  log_every_n_steps: 100
+  save_metrics_csv: true
+
+
+
+
+

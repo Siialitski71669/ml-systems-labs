@@ -3,3 +3,10 @@ __pycache__/
 *.pyc
 data/
 .DS_Store
+
+# MLflow artifacts
+mlflow.db
+mlruns/
+
+# Large profiling trace
+lab06/results/profile_trace.json

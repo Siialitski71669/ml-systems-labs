@@ -1,0 +1,7 @@
+optimizer,scheduler,epochs,batch_size,final_validation_accuracy,final_test_accuracy,training_seconds
+Adam,StepLR,10,128,89.68,89.39,243.41
+Adam,CosineAnnealingLR,10,128,89.76,89.49,238.84
+Adam,ReduceLROnPlateau,10,128,89.94,89.08,249.75
+SGD,StepLR,10,128,82.32,82.33,173.21
+SGD,CosineAnnealingLR,10,128,82.58,82.63,135.74
+SGD,ReduceLROnPlateau,10,128,84.62,84.52,136.29

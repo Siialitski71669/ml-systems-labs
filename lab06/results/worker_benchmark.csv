@@ -1,0 +1,6 @@
+num_workers,samples,total_seconds,samples_per_second,data_loading_percent,forward_percent,backward_percent,optimizer_percent
+0,55000,15.57,3532.79,47.53,23.16,25.82,3.49
+1,55000,8.72,6305.09,29.0,32.16,33.3,5.54
+2,55000,6.88,7997.88,5.0,44.47,43.7,6.83
+4,55000,7.17,7670.06,4.82,45.52,42.91,6.75
+8,55000,6.94,7928.34,5.0,44.78,43.39,6.83
