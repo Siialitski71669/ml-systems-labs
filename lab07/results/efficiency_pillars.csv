@@ -1,0 +1,5 @@
+pillar,measurement,result
+Data,Fashion-MNIST; same train/validation/test split for all runs,Fixed dataset and preprocessing; no data compression used
+Model,"Parameters, nonzero weights, checkpoint size, test accuracy","Teacher=866,282 params; plain student=94,042; distilled student=94,042"
+Compute,"CPU inference latency (ms/image), batch size and thread count",Teacher=1.8946 ms/image; CE student=0.4082; distilled student=0.4295
+Energy,Estimated latency × nominal CPU power (15 W); proxy only,Relative estimate; not a hardware energy-meter measurement

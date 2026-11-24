@@ -1,0 +1,38 @@
+seed: 42
+data:
+  root: ./data
+  batch_size: 128
+  num_workers: 2
+  validation_size: 5000
+training:
+  teacher_epochs: 5
+  finetune_epochs: 3
+  student_epochs: 5
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  max_train_samples: null
+  max_test_samples: null
+pruning:
+  sparsities:
+  - 0.0
+  - 0.25
+  - 0.5
+  - 0.75
+  - 0.9
+  - 0.95
+  structured_rates:
+  - 0.1
+  - 0.25
+  - 0.5
+distillation:
+  temperature: 4.0
+  alpha: 0.5
+benchmark:
+  warmup_batches: 5
+  repeats: 30
+  batch_size: 128
+  cpu_threads: 1
+  nominal_cpu_power_watts: 15.0
+output:
+  results_dir: ./lab07/results
+  checkpoints_dir: ./lab07/checkpoints
